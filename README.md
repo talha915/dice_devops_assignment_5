@@ -30,4 +30,9 @@ Configuration Details
       grafana/grafana
    ```
     
-
+# Accessing the Services
+ - Prometheus: http://localhost:9090
+ - Grafana: http://localhost:3000
+    - Default Login:
+        - Username: admin
+        - Password: admin
