@@ -13,22 +13,21 @@ Configuration Details
 
 # Running Prometheus and Grafana with Docker
 1. Start Prometheus:
-    ```
+   ```
       docker run -d \
       --name=prometheus \
       --network=monitoring \
       -p 9090:9090 \
       -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml \
       prom/prometheus
-    ```
+   ```
 2. Start Grafana:
-```
-    docker run -d \
-  --name=grafana \
-  --network=monitoring \
-  -p 3000:3000 \
-  grafana/grafana
-
-```
+   ```
+      docker run -d \
+      --name=grafana \
+      --network=monitoring \
+      -p 3000:3000 \
+      grafana/grafana
+   ```
     
 
