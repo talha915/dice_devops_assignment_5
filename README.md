@@ -36,3 +36,17 @@ Configuration Details
     - Default Login:
         - Username: admin
         - Password: admin
+     
+# Creating a Grafana Dashboard
+1. Add Prometheus as a Data Source:
+ - Navigate to Configuration -> Data Sources.
+ - Select Prometheus and set the URL to http://prometheus:9090.
+ - Click Save & Test.
+
+2. Create a Dashboard:
+ - Go to Dashboards -> Manage -> New Dashboard.
+ - Add a new panel and configure it to visualize the metrics from Prometheus.
+ - Save the dashboard for future use.
+
+# Conclusion
+You have now set up Prometheus and Grafana with Docker, configured Prometheus to scrape metrics, and created a basic Grafana dashboard.
