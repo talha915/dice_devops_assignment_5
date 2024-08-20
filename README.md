@@ -10,3 +10,13 @@ Configuration Details
 - scrape_configs:
     - prometheus: Scrapes metrics from the Prometheus server running on prometheus:9090.
     - your_application: Scrapes metrics from an application running on your_app:8000.
+
+# Running Prometheus and Grafana with Docker
+1. Start Prometheus:
+    ```docker run -d \
+      --name=prometheus \
+      --network=monitoring \
+      -p 9090:9090 \
+      -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml \
+      prom/prometheus```
+
