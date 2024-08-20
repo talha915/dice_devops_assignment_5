@@ -21,4 +21,14 @@ Configuration Details
       -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml \
       prom/prometheus
     ```
+2. Start Grafana:
+```
+    docker run -d \
+  --name=grafana \
+  --network=monitoring \
+  -p 3000:3000 \
+  grafana/grafana
+
+```
+    
 
